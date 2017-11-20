@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= image_tag @game.image_url %>
+<%= image_tag @game.image_url unless @game.image_url.blank? %>
 
 <p>
   <strong>Name:</strong>
